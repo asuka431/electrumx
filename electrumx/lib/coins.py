@@ -4074,3 +4074,22 @@ class Lbry(Coin):
     TX_PER_BLOCK = 43
     RPC_PORT = 9245
     REORG_LIMIT = 5000
+
+
+class Baricoin(Coin):
+    NAME = "Baricoin"
+    SHORTNAME = "BARI"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("0488b21e")
+    XPRV_VERBYTES = bytes.fromhex("0488ade4")
+    P2PKH_VERBYTE = bytes.fromhex("1a")
+    P2SH_VERBYTES = (bytes.fromhex("15"),)
+    WIF_BYTE = bytes.fromhex("9a")
+    GENESIS_HASH = ('3b29e926d8908b953b7ccc143eb14f5a'
+                    '1cd952600987420460da4acd1633b949')
+    DESERIALIZER = lib_tx.DeserializerSegWit
+    TX_COUNT = 0
+    TX_COUNT_HEIGHT = 125083
+    TX_PER_BLOCK = 1
+    RPC_PORT = 8135
+    REORG_LIMIT = 1000
