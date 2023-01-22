@@ -4091,5 +4091,5 @@ class Baricoin(Coin):
     TX_COUNT = 0
     TX_COUNT_HEIGHT = 125083
     TX_PER_BLOCK = 1
-    RPC_PORT = 8135
+    RPC_PORT = 8134
     REORG_LIMIT = 1000
